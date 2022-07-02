@@ -47,6 +47,11 @@ class TaskController extends Controller
      */
     public function editAction(Task $task, Request $request)
     {
+        if($task === 1)
+        {
+
+        }
+
         $form = $this->createForm(TaskType::class, $task);
 
         $form->handleRequest($request);
